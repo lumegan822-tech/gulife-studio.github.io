@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GULIFE STUDIO | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      background: #f8f7f4;
+      color: #242424;
+      line-height: 1.7;
+    }
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      margin-left: 20px;
+      color: inherit;
+      text-decoration: none;
+    }
+    .hero {
+      padding: 120px 8%;
+    }
+    h1 {
+      font-size: clamp(48px, 8vw, 100px);
+      line-height: 1.1;
+      letter-spacing: -2px;
+    }
+    section { padding: 60px 8%; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .project {
+      padding: 45px 30px;
+      min-height: 240px;
+      background: #e7e5df;
+      border-radius: 12px;
+    }
+    footer {
+      padding: 40px 8%;
+      border-top: 1px solid #ddd;
+    }
+    @media(max-width: 650px) {
+      .projects { grid-template-columns: 1fr; }
+      .hero { padding: 80px 8%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>GULIFE STUDIO</strong>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <p>Visual Design / Branding / UI UX</p>
+      <h1>Design with<br>Purpose.</h1>
+      <p>結合視覺美感、使用者體驗與品牌策略。</p>
+    </div>
+
+    <section id="work">
+      <h2>Selected Work</h2>
+      <div class="projects">
+        <article class="project"><h3>01 / Branding</h3></article>
+        <article class="project"><h3>02 / UI UX</h3></article>
+        <article class="project"><h3>03 / Visual Design</h3></article>
+        <article class="project"><h3>04 / Campaign</h3></article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>跨領域視覺設計師，專注品牌溝通與數位體驗。</p>
+    </section>
+
+    <section id="contact">
+      <h2>Let's Connect</h2>
+      <p>歡迎透過作品集與我聯繫。</p>
+    </section>
+  </main>
+
+  <footer>© 2026 GULIFE STUDIO</footer>
+</body>
+</html>
 
